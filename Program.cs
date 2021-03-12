@@ -14,29 +14,28 @@ namespace ShootingDice
             Player player2 = new Player();
             player2.Name = "Sue";
 
-            player2.Play(player1);
-
-            Console.WriteLine("-------------------");
-
             Player player3 = new Player();
             player3.Name = "Wilma";
-
-            player3.Play(player2);
-
-            Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
             large.Name = "Bigun Rollsalot";
 
-            player1.Play(large);
+            Player cocky = new SmackTalkingPlayer();
+            cocky.Name = "Cocky Steve";
 
-            Console.WriteLine("-------------------");
+            Player oneUp = new OneHigherPlayer();
+            oneUp.Name = "Fiorello";
+
+            Player aaron = new HumanPlayer();
+            aaron.Name = "Aaron";
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+                player1, player2, player3, large, cocky, oneUp, aaron
             };
 
-            PlayMany(players);
+            aaron.Play(player1);
+
+            // PlayMany(players);
         }
 
         static void PlayMany(List<Player> players)
