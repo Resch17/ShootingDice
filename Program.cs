@@ -33,7 +33,10 @@ namespace ShootingDice
                 player1, player2, player3, large, cocky, oneUp, aaron
             };
 
-            aaron.Play(player1);
+            Player creative = new CreativeSmackTalkingPlayer();
+            creative.Name = "Creative Jim";
+
+            creative.Play(player1);
 
             // PlayMany(players);
         }

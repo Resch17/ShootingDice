@@ -14,11 +14,11 @@ namespace ShootingDice
             {
                 try
                 {
-                    Console.WriteLine("Human! What is your roll? (1-6)");
+                    Console.WriteLine($"Human! What is your roll? (1-{DiceSize})");
                     Console.Write(" > ");
                     string input = Console.ReadLine();
                     output = int.Parse(input);
-                    if (output > 0 && output <= 6)
+                    if (output > 0 && output <= DiceSize)
                     {
                         entering = false;
                     }
