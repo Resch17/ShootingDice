@@ -35,12 +35,17 @@ namespace ShootingDice
             Player baby = new SoreLoserPlayer();
             baby.Name = "Donnie";
 
+            Player upperHalf = new UpperHalfPlayer();
+            upperHalf.Name = "Loaded Dice Frank";
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, cocky, oneUp, aaron, creative, baby
+                player1, player2, player3, large, cocky, oneUp, aaron, creative, baby, upperHalf
             };
 
+            upperHalf.Play(player1);
 
-            PlayMany(players);
+
+            // PlayMany(players);
         }
 
         static void PlayMany(List<Player> players)
