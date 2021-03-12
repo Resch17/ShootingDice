@@ -7,11 +7,11 @@ namespace ShootingDice
     public class CreativeSmackTalkingPlayer : Player
     {
         public List<string> Taunts { get; } = new List<string>(){
-            "You smell like farts!",
-            "I used to date guys like you in prison!",
-            "Does your mom know you're gambling?",
-            "Go screw!",
-            "You're gonna lose!!!"
+            "\"You smell like farts!\"",
+            "\"I used to date guys like you in prison!\"",
+            "\"Does your mom know you're gambling?\"",
+            "\"Go screw!\"",
+            "\"You're gonna lose!!!\""
         };
 
         public override void Play(Player other)

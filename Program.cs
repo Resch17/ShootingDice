@@ -38,14 +38,14 @@ namespace ShootingDice
             Player upperHalf = new UpperHalfPlayer();
             upperHalf.Name = "Loaded Dice Frank";
 
+            Player cheatingBaby = new SoreLoserUpperHalfPlayer();
+            cheatingBaby.Name = "Cody";
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, cocky, oneUp, aaron, creative, baby, upperHalf
+                player1, player2, player3, large, cocky, oneUp, aaron, creative, baby, upperHalf, cheatingBaby
             };
 
-            upperHalf.Play(player1);
-
-
-            // PlayMany(players);
+            PlayMany(players);
         }
 
         static void PlayMany(List<Player> players)
@@ -82,7 +82,7 @@ namespace ShootingDice
                 {
                     if (ex.Message == "sore loser")
                     {
-                        Console.WriteLine("Jesus, what a baby...");
+                        Console.WriteLine("\"Jesus, what a baby...\"");
                         continue;
                     }
                 }

@@ -20,7 +20,8 @@ namespace ShootingDice
             }
             else if (myRoll < otherRoll)
             {
-                Console.WriteLine("NO FAIR!!! FAKE NEWS!!!");
+                Console.WriteLine($"{other.Name} Wins!");
+                Console.WriteLine("\"NOOO! THIS IS RIGGED!\"");
                 throw new Exception("sore loser");
             }
             else
